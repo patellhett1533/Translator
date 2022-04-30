@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="translate.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+
+            <ul>
+                <li>
+                    <select></select>
+                    <i class="fa-regular fa-copy" id="copyIn"></i>
+                    <i class="fa-solid fa-volume-low" id="mic"></i>
+                </li>
+                <li><i class="fa-solid fa-right-left" id="exchange"></i><i class="fa-solid fa-arrows-rotate" id="clear"></i></li>
+                <li>
+                    <i class="fa-solid fa-volume-low" id="speak"></i>
+                    <i class="fa-regular fa-copy" id="copyOut"></i>
+                    <select></select>
+                </li>
+            </ul>
+            <div class="text">
+                <textarea id="inputTxt" placeholder="Enter Here..." autofocus></textarea>
+                <textarea id="outputTxt" placeholder="Translation..." readonly disabled></textarea>
+            </div>
+            <div class="button">
+                <button id="translateText">Translate</button>
+            </div>
+        </div>
+    </div>
+    <script src="language.js"></script>
+    <script src="translate.js"></script>
+</body>
+
+</html>
